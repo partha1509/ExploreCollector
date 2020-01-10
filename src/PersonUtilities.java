@@ -1,5 +1,4 @@
 import java.util.Objects;
-
 public interface PersonUtilities<T extends Object> {
     default boolean checkEquality(T t, T t1){
         return Objects.isNull(t) || Objects.isNull(t1) ? false
