@@ -63,8 +63,24 @@ public class ExploreCollector {
                 .stream()
                 .collect(groupingBy(Person::getAge));
         System.out.println(personGroupByAge);
-
-
+        /*
+        Collector(Function, Collector(Function, Collector))
+         */
+        Map<String, List<Integer>> nameByAge= PersonDataUtils.getPersonData()
+                .stream()
+                .collect(groupingBy(Person::getName, mapping(Person::getAge, toList())));
+        System.out.println(nameByAge);
+        Map<String, Integer> countByName= PersonDataUtils.getPersonData()
+                .stream()
+                .collect(groupingBy(Person::getName, collectingAndThen(counting(),Long::intValue)));
+        Set<String> specialization=PersonDataUtils.getPersonData()
+                .stream()
+                .flatMap(person -> person.getSpecializations().stream())
+                .map(String::toUpperCase)
+                .collect(Collectors.toSet());
+        /*
+        Mapping and flatMapping is in JDK10+
+         */
 
     }
 
