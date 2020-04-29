@@ -51,6 +51,8 @@ public class Person {
     public Person() {
     }
 
+    private void nothing(){}
+
     public Person(int id, String name, int age, List<String> specializations, String worksFor) {
         this.id = id;
         this.name = name;

@@ -2,6 +2,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.*;
 
@@ -84,7 +85,28 @@ public class ExploreService implements PersonUtilities {
                 .map(String::toUpperCase)
                 .collect(Collectors.toSet());
         /*
-        Mapping and flatMapping is in JDK10+
+        Mapping and flatMapping is in JDK9+
+         */
+//        PersonDataUtils.getPersonData()
+//                .stream()
+//                .collect(groupingBy(Person::getAge,
+//                        flatMapping(person->
+//                                Stream.of(person.getSpecialization().split(","),
+//                                        toList()))));
+
+        /*
+        reduce - reduce, sum, max, min, collect
+        collect(Collectors)/ collect(Collector)
+        mapping()/ flatMapping
+        collectingAndThen(Collector, Function)
+        groupingBy()
+
+        ()->{
+        .....
+        ..... Bad Practice
+        .....
+        return something;
+        }
          */
     }
 }
