@@ -11,7 +11,7 @@ public class PersonDataUtils {
                     new Person(5, "Paul", 25, Arrays.asList("C","C++","Java","Python","Scala"), "Google"),
                     new Person(6, "Victor Rantea", 35, Arrays.asList("Clean Code","Java","TDD","Design"), "IBM"),
                     new Person(7, "Tom Harry", 27, Arrays.asList("Django","Angular","JavaScript","J2EE"), "Lowes"),
-                    new Person(8, "Kaushik", 40, Arrays.asList("Spring Boot","Java","Microservice","RXJava","Angular"), "Open Source Contributor"),
+                    new Person(8, "Kaushik", 40, Arrays.asList("Spring Boot","Sql","Java","Microservice","RXJava","Angular"), "Open Source Contributor"),
                     new Person(9, "Mosh Kyle", 30, Arrays.asList("C++", "JavaScript","CQL","SQL","Java"), "Cerner"),
                     new Person(10, "Katerina", 25, Arrays.asList("JavaScript","ReactJS","Vue.js"), "StartUp"),
                     new Person(11, "Shabaz Khan", 30, Arrays.asList("Java","Spring Boot","TDD", "Microservice", "Cassandra"), "JcPenny")
